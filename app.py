@@ -29,7 +29,7 @@ with open('styles.css') as f:
     st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
 
-data = pd.read_excel("Data/April Input Platform Data .xlsx")
+data = pd.read_excel("april")
 whole_data = pd.concat(
    map(pd.read_excel, [january, february, march, april, may, june, july]), ignore_index=True)
 
